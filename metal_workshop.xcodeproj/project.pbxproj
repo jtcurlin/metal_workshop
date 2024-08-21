@@ -10,6 +10,7 @@
 		DB5FEE9D2C75652400C58572 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB5FEE9C2C75652400C58572 /* main.mm */; };
 		DB5FF2422C75783D00C58572 /* libglfw.3.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5FF2412C75783D00C58572 /* libglfw.3.4.dylib */; };
 		DB5FF2452C75799A00C58572 /* mtl_engine.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB5FF2442C75799A00C58572 /* mtl_engine.mm */; };
+		DB5FF2472C7644E800C58572 /* triangle.metal in Sources */ = {isa = PBXBuildFile; fileRef = DB5FF2462C7644E800C58572 /* triangle.metal */; };
 		DBF0CEF12C7563DB0080A94E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF0CEF02C7563DB0080A94E /* Foundation.framework */; };
 		DBF0CEF32C7563E20080A94E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF0CEF22C7563E20080A94E /* Metal.framework */; };
 		DBF0CEF52C7563EC0080A94E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF0CEF42C7563EC0080A94E /* QuartzCore.framework */; };
@@ -36,6 +37,7 @@
 		DB5FF2412C75783D00C58572 /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.4.dylib; path = ../../../../opt/homebrew/Cellar/glfw/3.4/lib/libglfw.3.4.dylib; sourceTree = "<group>"; };
 		DB5FF2432C7578C600C58572 /* metal_workshop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = metal_workshop.entitlements; sourceTree = "<group>"; };
 		DB5FF2442C75799A00C58572 /* mtl_engine.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = mtl_engine.mm; sourceTree = "<group>"; };
+		DB5FF2462C7644E800C58572 /* triangle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = triangle.metal; sourceTree = "<group>"; };
 		DBA0320B2C0CEC76006AD3BD /* Foundation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Foundation.hpp; sourceTree = "<group>"; };
 		DBA0320C2C0CEC76006AD3BD /* NSArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NSArray.hpp; sourceTree = "<group>"; };
 		DBA0320D2C0CEC76006AD3BD /* NSAutoreleasePool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NSAutoreleasePool.hpp; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				DBF0CEF62C7564090080A94E /* metal_implementation.cpp */,
 				DB5FEFA02C756AF700C58572 /* mtl_engine.hpp */,
 				DB5FF2442C75799A00C58572 /* mtl_engine.mm */,
+				DB5FF2462C7644E800C58572 /* triangle.metal */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5FF2452C75799A00C58572 /* mtl_engine.mm in Sources */,
+				DB5FF2472C7644E800C58572 /* triangle.metal in Sources */,
 				DBF0CEF82C7564090080A94E /* metal_implementation.cpp in Sources */,
 				DB5FEE9D2C75652400C58572 /* main.mm in Sources */,
 			);
@@ -473,6 +477,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				WARNING_CFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -533,6 +538,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				WARNING_CFLAGS = "";
 			};
 			name = Release;
 		};
